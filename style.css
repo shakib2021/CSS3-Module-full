@@ -1,0 +1,153 @@
+/* .box{
+    height:200px;
+    width:400px;
+    overflow:scroll;
+    border: 2px solid tomato;
+    overflow:scroll;
+   } */
+   /* .img{
+height:120px;
+width:300px;
+   } */
+
+   .box{
+height:100px;
+width:100px;
+border:1px solid royalblue;
+   }
+   .outer{
+       background: tomato;height:100px;
+       width:100px;
+   }
+   .inner{
+       background: teal;
+       /* transform: scale(.5); */
+/* transform: translateX(100px); */
+transform:rotate(30deg) scale(.5);
+
+
+   }
+
+
+
+
+   /* scale(1) standard */
+
+
+
+   .dox{
+       height:233px;
+       width:220px;
+     
+       background-color: tomato;
+       /* transition: background-color 13s ease 3s; */
+        transition: width 13s ease-out 3s; 
+     
+   }
+   .dox:hover{
+       background: yellow;
+       width:120px;
+    
+       /* transform: translateX(23px) scale(.5) rotate(360deg); */
+       
+   }
+
+
+   /* for cricket.html */
+
+.bat{
+transition: transform .5s ease-in;
+
+}
+.bat:hover{
+transform: rotate(-60deg);
+transform-origin: 100% 0%;
+}
+.ball{
+    height:30px;
+    width:30px;
+    background: tomato;
+    border-radius:360px;
+    position: relative;
+    left:51%;
+    bottom: 23%;
+    transition:transform 2s ease-in-out .2s;
+
+}
+
+
+.field:hover>.ball{
+    transform: translateX(239px) translateY(-123px);
+
+}
+
+
+/* this is animation.html section */
+@keyframes slidein{
+    0%{
+        left:0px;
+        top: 0px;
+    }
+    50%{
+        top:110px;
+        background: green;
+    }
+    100%{
+        left:700px;
+        top:0px;
+        background: hotpink;
+    }
+}
+.stage{
+    height: 200px;
+    min-width:800px;
+    background: gray;
+}
+.ball1{
+width:100px;
+height:100px;
+background: tomato;
+border-radius:360px;
+position:absolute;
+}
+.stage:hover .ball1{
+   animation: slidein 2s  ease-in-out 3s infinite alternate ;
+}
+
+
+/* this is  flexbox part */
+.container{
+    display: flex;
+    /* justify-content:space-evenly; */
+    /* justify-content: flex-end; */
+    
+}
+.box1{
+    height:200px;
+    width: 300px;
+  
+    font-size: 40px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
